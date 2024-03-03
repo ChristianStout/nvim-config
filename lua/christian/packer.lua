@@ -59,4 +59,6 @@ return require('packer').startup(function(use)
         }
     }
 
+    use 'CRAG666/code_runner.nvim'
+
 end)
