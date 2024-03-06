@@ -12,19 +12,22 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
       }
-    -- use { 
-    --    "catppuccin/nvim",
-    --    as = "catppuccin",
-    --    config = function()
-	--  	    vim.cmd.colorscheme "catppuccin"
-	--    end
-    --}
+    use { 
+        "catppuccin/nvim",
+        as = "catppuccin",
+    --  config = function()
+	--	    vim.cmd.colorscheme "catppuccin"
+	--  end
+    }
     
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
         config = function()
-            vim.cmd('colorscheme rose-pine')
+            --vim.cmd('colorscheme rose-pine')
+            --vim.cmd('colorscheme rose-pine-main')
+            vim.cmd('colorscheme rose-pine-moon')
+            --vim.cmd('colorscheme rose-pine-dawn')
         end
     })
 
